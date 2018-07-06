@@ -12,6 +12,12 @@
 		A636FCAE1F048ACE004C19B9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A636FCAC1F048ACE004C19B9 /* Main.storyboard */; };
 		A636FCB01F048ACE004C19B9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A636FCAF1F048ACE004C19B9 /* Assets.xcassets */; };
 		A636FCB31F048ACE004C19B9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A636FCB11F048ACE004C19B9 /* LaunchScreen.storyboard */; };
+		A636FCCA1F04938B004C19B9 /* bad.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A636FCC41F04938B004C19B9 /* bad.mp3 */; };
+		A636FCCB1F04938B004C19B9 /* correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = A636FCC51F04938B004C19B9 /* correct.wav */; };
+		A636FCCC1F04938B004C19B9 /* excellent.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A636FCC61F04938B004C19B9 /* excellent.mp3 */; };
+		A636FCCD1F04938B004C19B9 /* General.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636FCC71F04938B004C19B9 /* General.swift */; };
+		A636FCCE1F04938B004C19B9 /* good.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A636FCC81F04938B004C19B9 /* good.mp3 */; };
+		A636FCCF1F04938B004C19B9 /* incorrect.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A636FCC91F04938B004C19B9 /* incorrect.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +28,12 @@
 		A636FCAF1F048ACE004C19B9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A636FCB21F048ACE004C19B9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A636FCB41F048ACE004C19B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A636FCC41F04938B004C19B9 /* bad.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bad.mp3; sourceTree = "<group>"; };
+		A636FCC51F04938B004C19B9 /* correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = correct.wav; sourceTree = "<group>"; };
+		A636FCC61F04938B004C19B9 /* excellent.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = excellent.mp3; sourceTree = "<group>"; };
+		A636FCC71F04938B004C19B9 /* General.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = General.swift; sourceTree = "<group>"; };
+		A636FCC81F04938B004C19B9 /* good.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = good.mp3; sourceTree = "<group>"; };
+		A636FCC91F04938B004C19B9 /* incorrect.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = incorrect.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +72,22 @@
 				A636FCAF1F048ACE004C19B9 /* Assets.xcassets */,
 				A636FCB11F048ACE004C19B9 /* LaunchScreen.storyboard */,
 				A636FCB41F048ACE004C19B9 /* Info.plist */,
+				A636FCD01F0493A7004C19B9 /* Sounds */,
 			);
 			path = playSounds;
+			sourceTree = "<group>";
+		};
+		A636FCD01F0493A7004C19B9 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				A636FCC41F04938B004C19B9 /* bad.mp3 */,
+				A636FCC51F04938B004C19B9 /* correct.wav */,
+				A636FCC61F04938B004C19B9 /* excellent.mp3 */,
+				A636FCC71F04938B004C19B9 /* General.swift */,
+				A636FCC81F04938B004C19B9 /* good.mp3 */,
+				A636FCC91F04938B004C19B9 /* incorrect.mp3 */,
+			);
+			name = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,8 +150,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A636FCCA1F04938B004C19B9 /* bad.mp3 in Resources */,
+				A636FCCC1F04938B004C19B9 /* excellent.mp3 in Resources */,
 				A636FCB31F048ACE004C19B9 /* LaunchScreen.storyboard in Resources */,
+				A636FCCE1F04938B004C19B9 /* good.mp3 in Resources */,
+				A636FCCF1F04938B004C19B9 /* incorrect.mp3 in Resources */,
 				A636FCB01F048ACE004C19B9 /* Assets.xcassets in Resources */,
+				A636FCCB1F04938B004C19B9 /* correct.wav in Resources */,
 				A636FCAE1F048ACE004C19B9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A636FCCD1F04938B004C19B9 /* General.swift in Sources */,
 				A636FCAB1F048ACE004C19B9 /* ViewController.swift in Sources */,
 				A636FCA91F048ACE004C19B9 /* AppDelegate.swift in Sources */,
 			);
